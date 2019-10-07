@@ -1,37 +1,10 @@
-## Welcome to GitHub Pages
+## Welcome to CellIt!
 
-You can use the [editor on GitHub](https://github.com/JayKors/Cell-It-/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+This app is designed to aid those in the retail mobile electronics industry quickly manage their device inventory.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JayKors/Cell-It-/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Includes features such as:
+- Tabular Spreadsheet-like design
+- Tabs to manage current devices as well as sold devices
+- Calculations of sales performance over time
+- Easy input to add newly purchased devices
+- So much more!
