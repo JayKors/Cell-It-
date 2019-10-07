@@ -1,4 +1,4 @@
-## Welcome to CellIt!
+## Welcome to Cell It!
 
 This app is designed to aid those in the retail mobile electronics industry quickly manage their device inventory.
 
