@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ews-aK-8OI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="Mae-7N-YgK">
+            <objects>
+                <viewController id="Ews-aK-8OI" customClass="MainViewController" customModule="CellIt_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hCv-Gh-W6u">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6g2-FK-oKk">
+                                <rect key="frame" x="95" y="324" width="224" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Soe-HV-le1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Sales Summary">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="salesSummaryButtonTapped:" destination="Ews-aK-8OI" eventType="touchUpInside" id="y1h-ee-LmW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2S-xc-eH5">
+                                <rect key="frame" x="95" y="423" width="224" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="azI-BK-hxv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Purchase Device">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="purchaseDeviceButtonTapped:" destination="Ews-aK-8OI" eventType="touchUpInside" id="gSw-4E-4Wv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFj-ui-qWr">
+                                <rect key="frame" x="95" y="523" width="224" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="IoO-am-AGR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Devices for Sale">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="devicesForSaleButtonTapped:" destination="Ews-aK-8OI" eventType="touchUpInside" id="dyC-Uy-thY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cellit!" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yms-bg-IVo">
+                                <rect key="frame" x="152" y="91" width="110" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Managing your mobile electronics inventory, mobily!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhc-DW-CfK">
+                                <rect key="frame" x="20" y="136" width="374" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="Toa-AU-AC2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed by Jay K0rs CIS280 Fall 2019" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41e-bu-yfB">
+                                <rect key="frame" x="286" y="843" width="128" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="t6Q-nD-sap"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jhc-DW-CfK" firstAttribute="leading" secondItem="hCv-Gh-W6u" secondAttribute="leadingMargin" id="2on-rT-eiZ"/>
+                            <constraint firstItem="v2S-xc-eH5" firstAttribute="trailing" secondItem="pFj-ui-qWr" secondAttribute="trailing" id="CwP-QD-TCf"/>
+                            <constraint firstItem="pFj-ui-qWr" firstAttribute="top" secondItem="v2S-xc-eH5" secondAttribute="bottom" constant="50" id="EVm-Hz-f5U"/>
+                            <constraint firstItem="41e-bu-yfB" firstAttribute="trailing" secondItem="N8U-73-UQm" secondAttribute="trailing" id="KXc-CM-Wyt"/>
+                            <constraint firstItem="6g2-FK-oKk" firstAttribute="leading" secondItem="v2S-xc-eH5" secondAttribute="leading" id="RzH-qd-q1y"/>
+                            <constraint firstItem="v2S-xc-eH5" firstAttribute="top" secondItem="6g2-FK-oKk" secondAttribute="bottom" constant="49" id="W0f-fp-qIh"/>
+                            <constraint firstItem="jhc-DW-CfK" firstAttribute="top" secondItem="N8U-73-UQm" secondAttribute="top" constant="92" id="WSI-zr-NYs"/>
+                            <constraint firstItem="6g2-FK-oKk" firstAttribute="leading" secondItem="N8U-73-UQm" secondAttribute="leading" constant="95" id="ZP2-0I-phk"/>
+                            <constraint firstItem="6g2-FK-oKk" firstAttribute="trailing" secondItem="v2S-xc-eH5" secondAttribute="trailing" id="bGN-W7-FTt"/>
+                            <constraint firstItem="Yms-bg-IVo" firstAttribute="top" secondItem="N8U-73-UQm" secondAttribute="top" constant="47" id="bwM-1L-x1Y"/>
+                            <constraint firstItem="Yms-bg-IVo" firstAttribute="centerX" secondItem="jhc-DW-CfK" secondAttribute="centerX" id="exg-tw-Bf4"/>
+                            <constraint firstItem="v2S-xc-eH5" firstAttribute="centerY" secondItem="hCv-Gh-W6u" secondAttribute="centerY" id="gxo-Mf-6xj"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="41e-bu-yfB" secondAttribute="bottom" constant="-34" id="icB-N5-yZb"/>
+                            <constraint firstItem="41e-bu-yfB" firstAttribute="leading" secondItem="N8U-73-UQm" secondAttribute="leading" constant="286" id="k9W-xc-szv"/>
+                            <constraint firstItem="jhc-DW-CfK" firstAttribute="centerX" secondItem="6g2-FK-oKk" secondAttribute="centerX" id="kcO-37-JgX"/>
+                            <constraint firstItem="jhc-DW-CfK" firstAttribute="trailing" secondItem="hCv-Gh-W6u" secondAttribute="trailingMargin" id="tyH-8u-uH4"/>
+                            <constraint firstItem="v2S-xc-eH5" firstAttribute="leading" secondItem="pFj-ui-qWr" secondAttribute="leading" id="zMa-47-Zpu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="N8U-73-UQm"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Hx4-Rt-diN"/>
+                    <connections>
+                        <segue destination="Vw3-oP-uGv" kind="presentation" identifier="MainToPurchase" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="At1-u8-6rS"/>
+                        <segue destination="W3y-Ze-pgH" kind="presentation" identifier="MainToSales" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="brZ-3J-OFI"/>
+                        <segue destination="PKH-Xz-cv1" kind="presentation" identifier="MainToDevices" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Bij-Qe-5wf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f4e-yM-NE2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1577" y="-584"/>
+        </scene>
+        <!--Sales Summary View Controller-->
+        <scene sceneID="hM3-e9-uot">
+            <objects>
+                <viewController storyboardIdentifier="SalesSummaryViewController" id="W3y-Ze-pgH" customClass="SalesSummaryViewController" customModule="CellIt_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Ex-ph-aW5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wKA-MW-yP2">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem title="Sales Summary" id="Gkc-wu-oEI">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="e1U-QZ-niA">
+                                            <connections>
+                                                <segue destination="c7d-b4-Z50" kind="unwind" unwindAction="unwindToMainViewWithUnwindSegue:" id="oB2-qN-Rbi"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="n6d-Eu-gYc">
+                                <rect key="frame" x="0.0" y="145" width="414" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CurrentCell" id="vF1-eB-2A2" customClass="CurrentRevenueCell" customModule="CellIt_" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vF1-eB-2A2" id="ooh-3X-adx" customClass="CurrentRevenueCell" customModule="CellIt_" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Revenue" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwv-BP-uHl">
+                                                    <rect key="frame" x="20" y="12" width="101" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9Z-Uc-FGy">
+                                                    <rect key="frame" x="287" y="9" width="127" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="CurrentRevenueLabel" destination="zwv-BP-uHl" id="mBL-XI-yNv"/>
+                                            <outlet property="currentRevenueLabel" destination="zwv-BP-uHl" id="cMj-1d-U6r"/>
+                                            <outlet property="currentRevenueValue" destination="J9Z-Uc-FGy" id="ux4-Mx-yxk"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="For Sale" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWL-GL-QCz">
+                                <rect key="frame" x="10" y="110" width="157" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YrG-1J-hgF">
+                                <rect key="frame" x="0.0" y="345" width="414" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CurrentCell" id="Q5y-Vj-pV0" customClass="CurrentRevenueCell" customModule="CellIt_" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q5y-Vj-pV0" id="KKC-Lq-ogS" customClass="CurrentRevenueCell" customModule="CellIt_" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Revenue" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQF-g4-Yjz">
+                                                    <rect key="frame" x="20" y="12" width="101" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34l-FG-97u">
+                                                    <rect key="frame" x="287" y="9" width="101" height="21.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="CurrentRevenueLabel" destination="vQF-g4-Yjz" id="8aX-HE-eGU"/>
+                                            <outlet property="currentRevenueLabel" destination="vQF-g4-Yjz" id="s5Q-fc-PZo"/>
+                                            <outlet property="currentRevenueValue" destination="34l-FG-97u" id="wIw-80-g7L"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Month Sold" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9G9-UZ-1ro">
+                                <rect key="frame" x="10" y="310" width="185" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BUO-QJ-PR6">
+                                <rect key="frame" x="0.0" y="545" width="414" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CurrentCell" id="6O3-Hs-6gk" customClass="CurrentRevenueCell" customModule="CellIt_" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6O3-Hs-6gk" id="dwN-6R-nhx" customClass="CurrentRevenueCell" customModule="CellIt_" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Revenue" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZlR-3H-0bZ">
+                                                    <rect key="frame" x="20" y="12" width="101" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgF-6L-KSK">
+                                                    <rect key="frame" x="287" y="9" width="101" height="21.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="CurrentRevenueLabel" destination="ZlR-3H-0bZ" id="ErB-5w-ZvS"/>
+                                            <outlet property="currentRevenueLabel" destination="ZlR-3H-0bZ" id="dde-7Q-bYs"/>
+                                            <outlet property="currentRevenueValue" destination="RgF-6L-KSK" id="5dV-HX-2ks"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Year-to-Date Sold" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72U-w4-Qvv">
+                                <rect key="frame" x="10" y="510" width="171" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="5fq-jO-WOt"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView1" destination="n6d-Eu-gYc" id="uj5-cJ-xtR"/>
+                        <outlet property="tableView2" destination="YrG-1J-hgF" id="7Zv-V9-UZ8"/>
+                        <outlet property="tableView3" destination="BUO-QJ-PR6" id="I3K-33-XKW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vwt-cR-wry" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="c7d-b4-Z50" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-246.37681159420291" y="-1280.3571428571429"/>
+        </scene>
+        <!--Purchase Device View Controller-->
+        <scene sceneID="wmC-He-txB">
+            <objects>
+                <viewController id="Vw3-oP-uGv" customClass="PurchaseDeviceViewController" customModule="CellIt_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bkH-Uw-7pQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I8m-P3-Ajz">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="barTintColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem title="Purchase Device" id="qyz-xg-CK7">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="yDs-oT-PxK">
+                                            <connections>
+                                                <segue destination="Hnd-eN-YR0" kind="unwind" unwindAction="unwindToMainViewWithUnwindSegue:" id="Mwr-95-9mK"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Save" id="F1g-9S-Wyl">
+                                            <connections>
+                                                <action selector="saveButton:" destination="Vw3-oP-uGv" id="43h-vE-RS4"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Status (ex. Waiting for repair)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ycf-CQ-uGz">
+                                <rect key="frame" x="80" y="132" width="255" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Device Type (ex. Phone)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bYw-QL-ObP">
+                                <rect key="frame" x="80" y="202" width="255" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Manufacturer (ex. Apple)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hsg-BX-K7m">
+                                <rect key="frame" x="80" y="272" width="255" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Model (ex. iPhone 7)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pvD-P3-LAl">
+                                <rect key="frame" x="80" y="342" width="255" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Carrier (if applicable, ex. Verizon)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3EA-yT-vmf">
+                                <rect key="frame" x="80" y="412" width="255" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Storage Capacity (ex. 16GB)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1O2-fY-Z9P">
+                                <rect key="frame" x="80" y="482" width="255" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Color (ex. Rose Gold)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VKr-NT-yUu">
+                                <rect key="frame" x="80" y="552" width="255" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="IMEI/Serial Number (ex. 353900047830368)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7wJ-gn-KFd">
+                                <rect key="frame" x="80" y="622" width="255" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Purchase Price (ex. $75)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3cN-28-tTk" userLabel="Purchase Price Field">
+                                <rect key="frame" x="80" y="692" width="255" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Expected Sell Price (ex. $450)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="txc-WQ-zR3">
+                                <rect key="frame" x="80" y="762" width="255" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ycf-CQ-uGz" firstAttribute="leading" secondItem="bYw-QL-ObP" secondAttribute="leading" id="0UU-nl-1dZ"/>
+                            <constraint firstItem="Hsg-BX-K7m" firstAttribute="trailing" secondItem="pvD-P3-LAl" secondAttribute="trailing" id="0iQ-u2-NZ8"/>
+                            <constraint firstItem="7wJ-gn-KFd" firstAttribute="leading" secondItem="3cN-28-tTk" secondAttribute="leading" id="2rh-bO-hah"/>
+                            <constraint firstItem="bYw-QL-ObP" firstAttribute="leading" secondItem="Hsg-BX-K7m" secondAttribute="leading" id="3et-Sd-w6F"/>
+                            <constraint firstItem="pvD-P3-LAl" firstAttribute="trailing" secondItem="3EA-yT-vmf" secondAttribute="trailing" id="EsD-io-w31"/>
+                            <constraint firstItem="bYw-QL-ObP" firstAttribute="trailing" secondItem="Hsg-BX-K7m" secondAttribute="trailing" id="Fra-s8-u7U"/>
+                            <constraint firstItem="VKr-NT-yUu" firstAttribute="top" secondItem="1O2-fY-Z9P" secondAttribute="bottom" constant="36" id="Gqa-Dx-weY"/>
+                            <constraint firstItem="Hsg-BX-K7m" firstAttribute="leading" secondItem="pvD-P3-LAl" secondAttribute="leading" id="HA1-by-JDc"/>
+                            <constraint firstItem="1O2-fY-Z9P" firstAttribute="trailing" secondItem="VKr-NT-yUu" secondAttribute="trailing" id="IJY-b5-p3I"/>
+                            <constraint firstItem="1O2-fY-Z9P" firstAttribute="leading" secondItem="VKr-NT-yUu" secondAttribute="leading" id="LQJ-qO-oGL"/>
+                            <constraint firstItem="Ycf-CQ-uGz" firstAttribute="top" secondItem="I8m-P3-Ajz" secondAttribute="bottom" constant="44" id="Pow-Vi-TbX"/>
+                            <constraint firstItem="7wJ-gn-KFd" firstAttribute="top" secondItem="VKr-NT-yUu" secondAttribute="bottom" constant="36" id="RNC-oW-xjg"/>
+                            <constraint firstItem="Ycf-CQ-uGz" firstAttribute="trailing" secondItem="bYw-QL-ObP" secondAttribute="trailing" id="Vyb-hs-caI"/>
+                            <constraint firstItem="3cN-28-tTk" firstAttribute="trailing" secondItem="txc-WQ-zR3" secondAttribute="trailing" id="XhM-VW-dXV"/>
+                            <constraint firstItem="pvD-P3-LAl" firstAttribute="top" secondItem="Hsg-BX-K7m" secondAttribute="bottom" constant="36" id="Y6q-oB-kfF"/>
+                            <constraint firstItem="VKr-NT-yUu" firstAttribute="trailing" secondItem="7wJ-gn-KFd" secondAttribute="trailing" id="YY4-pV-bxW"/>
+                            <constraint firstItem="bYw-QL-ObP" firstAttribute="top" secondItem="Ycf-CQ-uGz" secondAttribute="bottom" constant="36" id="YgY-JR-Typ"/>
+                            <constraint firstItem="I8m-P3-Ajz" firstAttribute="centerX" secondItem="bkH-Uw-7pQ" secondAttribute="centerX" id="bfQ-PR-WMh"/>
+                            <constraint firstItem="txc-WQ-zR3" firstAttribute="top" secondItem="3cN-28-tTk" secondAttribute="bottom" constant="36" id="cCW-MT-fCG"/>
+                            <constraint firstItem="I8m-P3-Ajz" firstAttribute="leading" secondItem="jmx-5b-6i4" secondAttribute="leading" id="cKU-NU-YKF"/>
+                            <constraint firstItem="3EA-yT-vmf" firstAttribute="top" secondItem="pvD-P3-LAl" secondAttribute="bottom" constant="36" id="f0F-p9-rgC"/>
+                            <constraint firstItem="I8m-P3-Ajz" firstAttribute="centerX" secondItem="Ycf-CQ-uGz" secondAttribute="centerX" id="gcv-Qp-HNM"/>
+                            <constraint firstItem="3cN-28-tTk" firstAttribute="top" secondItem="7wJ-gn-KFd" secondAttribute="bottom" constant="36" id="ge5-C2-n2D"/>
+                            <constraint firstItem="1O2-fY-Z9P" firstAttribute="top" secondItem="3EA-yT-vmf" secondAttribute="bottom" constant="36" id="goY-Lb-YEM"/>
+                            <constraint firstItem="3cN-28-tTk" firstAttribute="leading" secondItem="txc-WQ-zR3" secondAttribute="leading" id="guK-ge-E4A"/>
+                            <constraint firstItem="7wJ-gn-KFd" firstAttribute="trailing" secondItem="3cN-28-tTk" secondAttribute="trailing" id="iTR-Kd-HXz"/>
+                            <constraint firstItem="Hsg-BX-K7m" firstAttribute="top" secondItem="bYw-QL-ObP" secondAttribute="bottom" constant="36" id="q2V-uJ-4Mn"/>
+                            <constraint firstItem="pvD-P3-LAl" firstAttribute="leading" secondItem="3EA-yT-vmf" secondAttribute="leading" id="qcV-J2-mK8"/>
+                            <constraint firstItem="VKr-NT-yUu" firstAttribute="leading" secondItem="7wJ-gn-KFd" secondAttribute="leading" id="qdT-5e-fmZ"/>
+                            <constraint firstItem="3EA-yT-vmf" firstAttribute="trailing" secondItem="1O2-fY-Z9P" secondAttribute="trailing" id="qvc-pd-2bt"/>
+                            <constraint firstItem="3EA-yT-vmf" firstAttribute="leading" secondItem="1O2-fY-Z9P" secondAttribute="leading" id="xp7-42-OKe"/>
+                            <constraint firstItem="Ycf-CQ-uGz" firstAttribute="leading" secondItem="jmx-5b-6i4" secondAttribute="leading" constant="80" id="yXX-Gl-wn4"/>
+                            <constraint firstItem="I8m-P3-Ajz" firstAttribute="top" secondItem="jmx-5b-6i4" secondAttribute="top" id="zIe-L3-yYl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jmx-5b-6i4"/>
+                    </view>
+                    <connections>
+                        <outlet property="carrierField" destination="3EA-yT-vmf" id="LRu-gT-go9"/>
+                        <outlet property="colorField" destination="VKr-NT-yUu" id="oEN-nb-0VM"/>
+                        <outlet property="deviceTypeField" destination="bYw-QL-ObP" id="yRD-Ga-U3H"/>
+                        <outlet property="manufacturerField" destination="Hsg-BX-K7m" id="1wi-Li-0Ma"/>
+                        <outlet property="modelField" destination="pvD-P3-LAl" id="Wvi-ch-WMK"/>
+                        <outlet property="purchasePriceField" destination="3cN-28-tTk" id="RrT-Ot-TCv"/>
+                        <outlet property="sellPriceField" destination="txc-WQ-zR3" id="CxJ-uE-A7f"/>
+                        <outlet property="statusField" destination="Ycf-CQ-uGz" id="Urr-Xh-Wns"/>
+                        <outlet property="storageCapacityField" destination="1O2-fY-Z9P" id="c8r-2o-Zgx"/>
+                        <outlet property="uidField" destination="7wJ-gn-KFd" id="uFl-iO-Pml"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vrF-iU-oGc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Hnd-eN-YR0" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-246" y="-585"/>
+        </scene>
+        <!--Devices For Sale View Controller-->
+        <scene sceneID="UKf-4o-mCV">
+            <objects>
+                <viewController id="PKH-Xz-cv1" customClass="DevicesForSaleViewController" customModule="CellIt_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5xF-wH-Pz2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nCm-Gy-Cr7">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem title="Devices For Sale" id="ttZ-V2-VW0">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="N2A-H6-dbm">
+                                            <connections>
+                                                <segue destination="CWt-bc-1er" kind="unwind" unwindAction="unwindToMainViewWithUnwindSegue:" id="oYo-H5-37P"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Clear List" id="MRE-dA-VGB">
+                                            <connections>
+                                                <action selector="clearListButtonTapped:" destination="PKH-Xz-cv1" id="tgo-D2-FWp"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hFf-wM-GWq">
+                                <rect key="frame" x="240" y="434" width="110" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hmv-Sq-gVQ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DeviceForSale" id="6z1-L7-t6z" customClass="DeviceForSaleCell" customModule="CellIt_" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6z1-L7-t6z" id="8fP-CC-jDp">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EsZ-dc-amA">
+                                                    <rect key="frame" x="20" y="11" width="386" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="EsZ-dc-amA" id="aNC-cm-u7s"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ry9-vg-Lc4"/>
+                    </view>
+                    <connections>
+                        <outlet property="forSaleTableView" destination="Hmv-Sq-gVQ" id="s1V-Yf-bcD"/>
+                        <segue destination="LXn-OC-Sc0" kind="presentation" identifier="DevicesForSaleToDeviceX" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="2Kb-1p-kbO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fgC-ld-X4G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="CWt-bc-1er" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-246.37681159420291" y="112.5"/>
+        </scene>
+        <!--DeviceX View Controller-->
+        <scene sceneID="7s0-yu-VKq">
+            <objects>
+                <viewController id="LXn-OC-Sc0" customClass="DeviceXViewController" customModule="CellIt_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8HW-K9-cv2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xw2-ib-U5P">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem title="Label" id="TeV-OZ-BzD">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="P5W-Tk-cFO">
+                                            <connections>
+                                                <segue destination="gr0-2j-mEV" kind="unwind" unwindAction="unwindToDevicesForSaleViewWithUnwindSegue:" id="yxr-U1-fkG"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Update" id="0WP-Oh-sS4">
+                                            <connections>
+                                                <action selector="updateButtonTapped:" destination="LXn-OC-Sc0" id="wIt-fX-fbi"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Status (ex. Waiting for repair)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hgO-Ze-Op7">
+                                <rect key="frame" x="80" y="118" width="255" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Device Type (ex. Phone)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sNP-Zl-pgK">
+                                <rect key="frame" x="80" y="188" width="255" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Manufacturer (ex. Apple)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iEv-Z7-OVT">
+                                <rect key="frame" x="80" y="258" width="255" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Model (ex. iPhone 7)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TwF-O8-qLd">
+                                <rect key="frame" x="80" y="328" width="255" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Carrier (if applicable, ex. Verizon)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yV8-YJ-T9E">
+                                <rect key="frame" x="80" y="398" width="255" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Storage Capacity (ex. 16GB)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S89-nv-tE9">
+                                <rect key="frame" x="80" y="468" width="255" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Color (ex. Rose Gold)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vdx-x1-Api">
+                                <rect key="frame" x="80" y="538" width="255" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="IMEI/Serial Number (ex. 353900047830368)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m4N-1w-3Oi">
+                                <rect key="frame" x="80" y="608" width="255" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Purchase Price (ex. $75)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q4r-cQ-Bbm" userLabel="Purchase Price Field">
+                                <rect key="frame" x="80" y="678" width="255" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Expected Sell Price (ex. $450)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xQA-fN-FUa">
+                                <rect key="frame" x="80" y="748" width="255" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gs-hm-1tV">
+                                <rect key="frame" x="95" y="804" width="224" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Mark Sold">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="markSoldButtonPressed:" destination="LXn-OC-Sc0" eventType="touchUpInside" id="Osn-7B-X0P"/>
+                                    <action selector="salesSummaryButtonTapped:" destination="Ews-aK-8OI" eventType="touchUpInside" id="4am-XC-Ni0"/>
+                                    <segue destination="gr0-2j-mEV" kind="unwind" unwindAction="unwindToDevicesForSaleViewWithUnwindSegue:" id="MBS-h4-Ego"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="scz-Pc-8Ym"/>
+                    </view>
+                    <connections>
+                        <outlet property="carrierField" destination="yV8-YJ-T9E" id="mxV-fX-KZQ"/>
+                        <outlet property="colorField" destination="Vdx-x1-Api" id="Im0-Zw-Jel"/>
+                        <outlet property="deviceTypeField" destination="sNP-Zl-pgK" id="Cek-vD-dpy"/>
+                        <outlet property="manufacturerField" destination="iEv-Z7-OVT" id="8nJ-aH-7gA"/>
+                        <outlet property="modelField" destination="TwF-O8-qLd" id="Qc7-JA-b6u"/>
+                        <outlet property="navBarLabel" destination="TeV-OZ-BzD" id="9xX-Yl-AXM"/>
+                        <outlet property="purchasePriceField" destination="Q4r-cQ-Bbm" id="xIf-6V-01m"/>
+                        <outlet property="sellPriceField" destination="xQA-fN-FUa" id="Yga-4k-eih"/>
+                        <outlet property="statusField" destination="hgO-Ze-Op7" id="Lfx-Vk-NdH"/>
+                        <outlet property="storageCapacityField" destination="S89-nv-tE9" id="X8z-nh-99g"/>
+                        <outlet property="uidField" destination="m4N-1w-3Oi" id="Y5o-3Z-cJb"/>
+                    </connections>
+                </viewController>
+                <exit id="gr0-2j-mEV" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b87-hM-pVk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="589.85507246376812" y="112.5"/>
+        </scene>
+    </scenes>
+</document>
